@@ -1,1 +1,98 @@
 
+## Basic Syntax
+1. `print()` - Outputs data to the console.
+2. `input()` - Takes input from the user.
+3. `type()` - Returns the type of an object.
+4. `len()` - Returns the length of an object.
+
+## Data Types
+5. `int()` - Converts a value to an integer.
+6. `float()` - Converts a value to a float.
+7. `str()` - Converts a value to a string.
+8. `list()` - Creates a list.
+9. `tuple()` - Creates a tuple.
+10. `dict()` - Creates a dictionary.
+11. `set()` - Creates a set.
+
+## Control Structures
+12. `if` - Conditional statement.
+13. `elif` - Else if conditional.
+14. `else` - Alternative conditional block.
+15. `for` - Loop over a sequence.
+16. `while` - Loop while a condition is true.
+17. `break` - Exit a loop.
+18. `continue` - Skip to the next iteration.
+19. `pass` - Do nothing; placeholder.
+
+## Functions
+20. `def` - Defines a function.
+21. `return` - Exits a function and returns a value.
+22. `lambda` - Creates an anonymous function.
+
+## Modules and Imports
+23. `import` - Imports a module.
+24. `from ... import` - Imports specific attributes from a module.
+25. `as` - Renames a module or attribute when importing.
+
+## File I/O
+26. `open()` - Opens a file.
+27. `read()` - Reads the content of a file.
+28. `readline()` - Reads a single line from a file.
+29. `write()` - Writes data to a file.
+30. `close()` - Closes a file.
+
+## Exception Handling
+31. `try` - Starts a block to test for exceptions.
+32. `except` - Catches exceptions.
+33. `finally` - Executes code after try/except blocks.
+34. `raise` - Raises an exception.
+
+## Object-Oriented Programming
+35. `class` - Defines a class.
+36. `__init__` - Constructor method.
+37. `self` - Refers to the instance of the class.
+38. `super()` - Calls methods from the parent class.
+
+## List Comprehensions
+39. `[x for x in iterable]` - Creates a list from an iterable.
+40. `{x: x**2 for x in range(5)}` - Creates a dictionary comprehension.
+
+## String Methods
+41. `str.lower()` - Converts to lowercase.
+42. `str.upper()` - Converts to uppercase.
+43. `str.strip()` - Removes whitespace.
+44. `str.split()` - Splits a string into a list.
+45. `str.join()` - Joins a list into a string.
+
+## Dictionary Methods
+46. `dict.keys()` - Returns a view of the dictionary's keys.
+47. `dict.values()` - Returns a view of the dictionary's values.
+48. `dict.items()` - Returns a view of the dictionary's items.
+49. `dict.get()` - Returns the value for a key.
+50. `dict.update()` - Updates a dictionary with another dictionary.
+
+## Set Methods
+51. `set.add()` - Adds an element to a set.
+52. `set.remove()` - Removes an element from a set.
+53. `set.union()` - Returns the union of two sets.
+54. `set.intersection()` - Returns the intersection of two sets.
+
+## List Methods
+55. `list.append()` - Adds an element to the end of a list.
+56. `list.extend()` - Extends a list by appending elements from another.
+57. `list.pop()` - Removes and returns an element at a given position.
+58. `list.sort()` - Sorts a list in place.
+
+## Regular Expressions
+59. `re.match()` - Matches a pattern at the start of a string.
+60. `re.search()` - Searches for a pattern in a string.
+61. `re.findall()` - Finds all occurrences of a pattern in a string.
+62. `re.sub()` - Replaces occurrences of a pattern in a string.
+
+## NumPy (Numerical Computations)
+63. `np.array()` - Creates a NumPy array.
+64. `np.arange()` - Creates an array with a range of numbers.
+65. `np.zeros()` - Creates an array filled with zeros.
+66. `np.ones()` - Creates an array filled with ones.
+67. `np.mean()` - Calculates the mean of an array.
+
