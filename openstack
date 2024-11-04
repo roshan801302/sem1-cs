@@ -38,3 +38,4 @@ sunbeam configure --accept-defaults --openrc demo-openrc
 ```bash
 sunbeam launch ubuntu --name test
 ```
+..
