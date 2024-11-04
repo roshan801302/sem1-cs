@@ -1,42 +1,20 @@
-#OPENSTACK ON AWS#
-
-
-
+#   OPENSTACK ON AWS   #
 ```
 sudo snap install openstack --channel 2024.1/beta
-```
-**Begin by installing the openstack snap**
-
-
-
-```
+```  ** Begin by installing the openstack snap **  ```
 sunbeam prepare-node-script
-```
-**Sunbeam can generate a script to ensure that the machine has all of the required dependencies installed and is configured correctly for use in OpenStack**
-
-
-```
-sunbeam prepare-node-script | bash -x && newgrp snap_daemon
-```
+```  **Sunbeam can generate a script to ensure that the machine has all of the required dependencies installed and is configured correctly for use in OpenStack**  ```
+``` sunbeam prepare-node-script | bash -x && newgrp snap_daemon ```
 **The script will ensure some software requirements are satisfied on the host**
-
-
-
-```
-sunbeam cluster bootstrap --accept-defaults
-```
+```  sunbeam cluster bootstrap --accept-defaults  ```
 **Bootstrap the cloud**
 
 
-```
-sunbeam configure --accept-defaults --openrc demo-openrc
-```
+``` sunbeam configure --accept-defaults --openrc demo-openrc ```
 **configure the deployed cloud using the configure command**
 
 
-```
-sunbeam launch ubuntu --name test
-```
+``` sunbeam launch ubuntu --name test  ```
 **Launching a VM on openstack**
 
 
