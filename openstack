@@ -1,4 +1,4 @@
-#   OPENSTACK ON AWS   #
+# OPENSTACK ON AWS #
 ```
 sudo snap install openstack --channel 2024.1/beta
 ```  ** Begin by installing the openstack snap **  ```
