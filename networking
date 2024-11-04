@@ -1,1 +1,95 @@
-a
+# networking
+
+**SWICH**-hardware
+
+**open Vswitch OR OVS**-software
+
+**LOAD BALANCER**-help to overcome the traffic
+
+**SMART NICS**-
+
+  DPDK-transfer TCP packets from operating system kernel to processing running space in user space.
+
+  SR-IOV-allows a device, such as a network adapter, to separate access to its resources among various PCIe hardware functionsand help in optimization gives efficiency.
+
+**proxy and reverse proxy**
+
+**NAT**
+
+**routing**
+
+**ROUTE 53(DNS)**
+
+**DNS**
+
+**LAYER 4** (TCP AND UDP)
+
+**CNI**-EX:FUNNEL,CALICO
+
+**DHCP (Dynamic Host Configuration Protocol)**- a network management protocol used to dynamically assign an IP address to any device, or node, on a network so it can communicate using IP.
+
+**HASHING**
+
+**LAYER 7** (PRESENTATION AND DATA LINK)-it is best for load balancing of HTTP and HTPPS.
+
+**SWITCH**
+
+**TUN**
+
+**OSI LAYER**
+
+ L7 PHYSICAL
+
+ L6 DATA LINK
+
+ L5 NETWORK 
+
+ L4 TRANSPORT
+
+ L3 SESSION
+
+ L2 PRESENTATION
+
+ L1 APPLICATION 
+
+**IP ADDRESS** -INTERNET PROTOCOL(IPv4,IPv6)
+
+  Public IP- ex:starts with 11..
+
+  Private IP-10. ,172. ,192. . 
+
+  Local IP-ex:starts with 127.0.00[a specific number]
+
+**PORT NUMBER**-
+
+eg:HTTP-80
+
+HTTPS-443
+
+FTP-20,21
+
+SMTP-25
+
+TELMET-23
+
+SSH[secure shell]-22
+
+**DNS** (turns domain name into IP address)
+
+> # CDN(content delievery network)
+A content delivery network (CDN) is a group of geographically distributed servers that speed up the delivery of web content by bringing it closer to where users are.
+
+> SNOWBALL
+  it is a way of trransferring the data physically.
+
+**ping**
+
+**NIC**
+
+**ethernet**
+
+**tap(temporary applicant pool)**
+
+**API**
+
+**rest api**
