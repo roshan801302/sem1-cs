@@ -1,41 +1,18 @@
-# Transferring public server to private server using Openstack
-
-## Launch your AWS instance with following preferences:
-- Ubuntu OS
-- Ubuntu 22.04 LTS
-- t2.xlarge (16GB ram)
-- 50 GB storage
-- HTTP/HTTPS and All traffic (anywhere) enabled
-
-### Now open your instance in PuTTY and follow the following commands.
-
-#### Install the openstack snap:
-
-```bash
+# OPENSTACK ON AWS
 sudo snap install openstack --channel 2024.1/beta
-```
+Begin by installing the openstack snap
 
-### Prepare the machine:
+sunbeam prepare-node-script
+Sunbeam can generate a script to ensure that the machine has all of the required dependencies installed and is configured correctly for use in OpenStack
 
-```bash
 sunbeam prepare-node-script | bash -x && newgrp snap_daemon
-```
+The script will ensure some software requirements are satisfied on the host
 
-### Bootstrap the cloud:
-
-```bash
 sunbeam cluster bootstrap --accept-defaults
-```
+Bootstrap the cloud
 
-### Configure the cloud and obtain credentials:
-
-```bash
 sunbeam configure --accept-defaults --openrc demo-openrc
-```
+configure the deployed cloud using the configure command
 
-### Launch a VM:
-
-```bash
 sunbeam launch ubuntu --name test
-```
-..
+Launching a VM on openstack
