@@ -13,7 +13,6 @@ def main():
     a = float(input("Enter coefficient a: "))
     b = float(input("Enter coefficient b: "))
     c = float(input("Enter coefficient c: "))
-    if a = 0
     if a == 0:
         print("This is not a quadratic equation because 'a' cannot be zero.")
     else:
