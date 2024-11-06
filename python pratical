@@ -16,9 +16,6 @@ def main():
     else:
         root1, root2 = find_roots(a, b, c)
         print(f"The roots of the quadratic equation are: {root1} and {root2}")
-# Run the main function to start the program
-if __name__ == "__main__":
-    main()
 
 
 
