@@ -75,3 +75,233 @@ def main():
 if __name__ == "__main__":
     main()
 
+
+pratical 3
+
+
+n = 5 
+
+for i in range(1, n + 1):
+    print(' ' * (n - i) + '*' * (2 * i - 1))
+
+for i in range(n - 1, 0, -1):
+    print(' ' * (n - i) + '*' * (2 * i - 1))
+
+pratical 4
+
+
+char = input("Enter a character: ")
+
+if char.isalpha():
+    print("The character is a letter.")
+    if char.isupper():
+        print("The letter is uppercase.")
+    else:
+        print("The letter is lowercase.")
+elif char.isdigit():
+    print("The character is a numeric digit.")
+    num_to_text = {
+        '0': "ZERO", '1': "ONE", '2': "TWO", '3': "THREE", '4': "FOUR",
+        '5': "FIVE", '6': "SIX", '7': "SEVEN", '8': "EIGHT", '9': "NINE"
+    }
+    print("The numeric digit in text is:", num_to_text[char])
+else:
+    print("The character is a special character.")
+
+
+
+pratical 5
+
+
+
+
+
+string = input("Enter a string: ")
+
+char_to_count = input("Enter the character to find its frequency: ")
+print(f"The frequency of '{char_to_count}' is: {string.count(char_to_count)}")
+
+old_char = input("Enter the character to replace: ")
+new_char = input("Enter the new character: ")
+print(f"String after replacement: {string.replace(old_char, new_char)}")
+
+char_to_remove = input("Enter the character to remove its first occurrence: ")
+print(f"String after removing the first occurrence of '{char_to_remove}': {string.replace(char_to_remove, '', 1)}")
+
+char_to_remove_all = input("Enter the character to remove all occurrences: ")
+print(f"String after removing all occurrences of '{char_to_remove_all}': {string.replace(char_to_remove_all, '')}")
+
+
+
+
+
+
+pratical 6
+
+
+
+string1 = input("Enter the first string: ")
+string2 = input("Enter the second string: ")
+n = int(input("Enter the number of characters to swap: "))
+
+if n <= len(string1) and n <= len(string2):
+    print("First string:", string2[:n] + string1[n:])
+    print("Second string:", string1[:n] + string2[n:])
+else:
+    print("Error: n is larger than the length of one or both strings.")
+
+
+
+
+pratical 7
+
+
+
+def find_substring_indices(string, substring):
+    indices = []
+    start = 0
+    while True:
+        index = string.find(substring, start)
+        if index == -1:
+            break
+        indices.append(index)
+        start = index + 1
+    return indices if indices else -1
+
+
+
+
+pratical 8
+
+
+
+input_list = [int(x) if x.isdigit() else x for x in input("Enter elements separated by space: ").split()]
+cubes_of_evens = []
+for item in input_list:
+    if isinstance(item, int) and item % 2 == 0:
+        cubes_of_evens.append(item ** 3)
+print(cubes_of_evens)
+
+
+
+input_list = [int(x) if x.isdigit() else x for x in input("Enter elements separated by space: ").split()]
+cubes_of_evens = [x ** 3 for x in input_list if isinstance(x, int) and x % 2 == 0]
+print(cubes_of_evens)
+
+
+
+pratical 9
+
+
+filename = input("Enter the filename: ")
+with open(filename, 'r') as file:
+    content = file.readlines()
+
+total_chars = sum(len(line) for line in content)
+total_words = sum(len(line.split()) for line in content)
+total_lines = len(content)
+print(f"Characters: {total_chars}, Words: {total_words}, Lines: {total_lines}")
+
+char_freq = {}
+for line in content:
+    for char in line:
+        if char not in char_freq:
+            char_freq[char] = 1
+        else:
+            char_freq[char] += 1
+print("Character Frequency:", char_freq)
+
+words = [word for line in content for word in line.split()]
+print("Words in reverse order:", ' '.join(reversed(words)))
+
+with open('File1', 'w') as file1, open('File2', 'w') as file2:
+    for i, line in enumerate(content, 1):
+        if i % 2 == 0:
+            file1.write(line)
+        else:
+            file2.write(line)
+
+
+
+
+pratical 10
+
+
+
+
+
+import math
+
+class Point:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+    def __str__(self):
+        return f"Point({self.x}, {self.y})"
+
+    def distance(self, other_point):
+        return math.sqrt((self.x - other_point.x)**2 + (self.y - other_point.y)**2)
+
+p1 = Point(1, 2)
+p2 = Point(4, 6)
+print(p1)
+print(p2)
+print(f"Distance between {p1} and {p2}: {p1.distance(p2)}")
+
+
+
+
+
+
+
+pratical 11
+
+
+
+def print_cubes():
+    cubes_dict = {i: i**3 for i in range(1, 6)}
+    print(cubes_dict)
+
+print_cubes()
+
+
+
+
+pratical 12
+
+
+
+
+t1 = (1, 2, 5, 7, 9, 2, 4, 6, 8, 10)
+t2 = (11, 13, 15)
+
+mid = len(t1) // 2
+print(t1[:mid])
+print(t1[mid:])
+
+even_tup = tuple(x for x in t1 if x % 2 == 0)
+print(even_tup)
+
+t3 = t1 + t2
+print(t3)
+
+print(max(t3), min(t3))
+
+
+
+
+
+pratical 13
+
+
+
+
+name = input("Enter your name: ")
+
+try:
+    if any(char.isdigit() or not char.isalnum() for char in name):
+        raise ValueError("Name should not contain digits or special characters.")
+    print("Name accepted:", name)
+except ValueError as e:
+    print(e)
